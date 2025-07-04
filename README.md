@@ -15,26 +15,25 @@
 - 🔄 **ETL Pipelines** using Python and SQL
 - 🔥 **Scalable Data Processing** on Databricks (Apache Spark)
 - 📊 **Interactive Dashboards** with Power BI and Excel
-- 🌐 **Full-stack Web Interface** using Flask/Django and React
+- 🌐 **SmartDataX Platform** using Nextjs and expressjs
 - 📁 **Supports Structured & Semi-structured Data**
-- 📈 **Real-time and Historical Insights**
-- 🧩 **Modular & Scalable Architecture**
+- 📈 **Real-time and Business Insights**
+
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Backend
-- Python 3.13
-- SQL (MySQL/Azure SQL)
-- Flask or Django
-- SQLAlchemy
-- Databricks (Apache Spark)
+- Express js
+- MongoDB
+- Rest API
+
 
 ### Frontend
-- HTML, CSS, JavaScript
-- React.js (or Bootstrap)
-- Plotly (optional)
+- NextJS
+- TailwindCSS
+- Shadcn/UI
 
 ### Data Visualization
 - Power BI
@@ -43,7 +42,7 @@
 ### Libraries & Tools
 - Pandas, NumPy, Seaborn, Matplotlib
 - PySpark
-- Jupyter Notebook or VS Code
+- Jupyter Notebook & VS Code
 
 ---
 
