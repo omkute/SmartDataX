@@ -27,7 +27,7 @@ const fadeInUp: Variants = {
 function HeroSection() {
   return (
     <section className="h-screen flex items-center">
-      <div className="lg:px-[10vw] px-4 md:flex h-full lg:flex-row-reverse w-full gap-10 ">
+      <div className="lg:px-[10vw] px-4 md:flex h-full lg:flex-row-reverse w-full gap-10 mt-[10vh] ">
         {/* Right Section - Animation */}
         <motion.div
           className="lg:max-w-[50%] my-auto "
