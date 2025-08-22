@@ -47,6 +47,7 @@ export default function ContactUs() {
     <section className="py-10 px-5 md:px-20">
       <div className="max-w-lg mx-auto bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl shadow-md">
         <h3 className="text-2xl font-semibold text-center mb-4">Contact Us</h3>
+        <p>If you have huge raw data and need insights for your business Contact Us</p>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <Input type="text" name="name" placeholder="Your Name" required />
           <Input type="email" name="email" placeholder="Your Email" required />
