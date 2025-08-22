@@ -1,7 +1,7 @@
 import User from "@/models/User"
 import bcrypt from "bcryptjs"
 import { createSession } from "./session"
-import dbConnect from "@/utils/conndectDB"
+// import dbConnect from "@/utils/conndectDB"
 
 type signup = {
     username: string,
@@ -9,7 +9,7 @@ type signup = {
     password: string
 }
 export async function signupUser({ username, email, password }: signup) {
-    await dbConnect()
+    // await dbConnect()
     const existingUser = await User.findOne({ email})
 
     if(existingUser) throw new Error("Email already registered from auth")
@@ -28,7 +28,7 @@ type login = {
     password: string
 }
 export async function loginUser({ email, password }: login) {
-    await dbConnect()
+    // await dbConnect()
     const user = await User.findOne({ email })
     if (!user) {
         throw new Error("User Does not exists")
