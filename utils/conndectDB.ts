@@ -17,12 +17,12 @@ async function dbConnect() {
     return cached.conn
   }
 
-  if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGO_URI!, {
-      bufferCommands: false,
-      dbName: "SmartDataX", 
-    }).then((mongoose) => mongoose)
-  }
+  // if (!cached.promise) {
+  //   cached.promise = mongoose.connect(MONGO_URI!, {
+  //     bufferCommands: false,
+  //     dbName: "SmartDataX", 
+  //   }).then((mongoose) => mongoose)
+  // }
 
   cached.conn = await cached.promise
   return cached.conn
