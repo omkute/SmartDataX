@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
-import { Menu, Phone } from 'lucide-react'
+import { Mail, Menu } from 'lucide-react'
 import { ModeToggle } from '../ui/dark-togggler'
 
 
@@ -42,9 +42,9 @@ function NavBar({ active }: NavBarProps) {
                         <ModeToggle />
 
                     </div>
-                    <Button >Login</Button>
+                    {/* <Button >Login</Button> */}
                     <Button className=' hidden  lg:flex bg-green-400/70 hover:bg-green-400'>
-                        <Phone className=' hidden lg:block' />
+                        <Mail className=' hidden lg:block' />
                         Get a Quote
                     </Button>
                     <Menu className=' lg:hidden mx-3' />
