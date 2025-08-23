@@ -23,7 +23,14 @@ function NavBar({ active }: NavBarProps) {
                             height={150}
                             width={150}
                             alt='Logo'
-                            className='rounded-2xl'
+                            className='rounded-2xl block dark:hidden'
+                        />
+                        <Image
+                            src="/logo-dark.png" 
+                            height={150}
+                            width={150}
+                            alt='Logo'
+                            className='rounded-2xl hidden object-contain dark:block'
                         />
                     </Link>
                 </div>

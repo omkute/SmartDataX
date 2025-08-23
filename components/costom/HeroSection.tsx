@@ -26,11 +26,11 @@ const fadeInUp: Variants = {
 
 function HeroSection() {
   return (
-    <section className="h-screen flex items-center">
+    <section className="h-[80vh] flex items-center">
       <div className="lg:px-[10vw] px-4 md:flex h-full lg:flex-row-reverse w-full gap-10 mt-[10vh] lg:mt-0 ">
         {/* Right Section - Animation */}
         <motion.div
-          className="lg:max-w-[50%] my-auto "
+          className="lg:max-w-[50%] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] my-auto relative"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -39,7 +39,7 @@ function HeroSection() {
             src="/lottie/HeroAnimation.lottie"
             loop
             autoplay
-            className="object-contain w-full h-auto"
+            className="object-contain w-full h-full"
           />
         </motion.div>
 
@@ -98,7 +98,7 @@ function HeroSection() {
             className="text-sm text-gray-500/70 text-center lg:text-left"
           >
             Transform raw data into powerful insights through <br />
-            automation, analytics, and full-stack web dashboards.
+            ETL and Data Analytics 
           </motion.p>
 
           <motion.div
