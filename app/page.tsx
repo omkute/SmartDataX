@@ -4,6 +4,7 @@ import Features from "@/components/costom/Features";
 import HeroSection from "@/components/costom/HeroSection";
 import OurServices from "@/components/costom/Services";
 import OurTools from "@/components/costom/tools";
+import Videosetion from "@/components/costom/videosetion";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
       <OurTools/>
       <Features/>
       <OurServices/>
+      <Videosetion 
+        src="/bannervideo.mp4"
+      />
       <ContactUs/>
     </section>
   );
