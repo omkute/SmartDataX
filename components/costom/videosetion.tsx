@@ -11,7 +11,7 @@ interface VideoSectionProps {
 const VideoSection: React.FC<VideoSectionProps> = ({
   src,
   autoPlay = true,
-  loop = true,
+//   loop = true,
   muted = true,
   overlayText,
 }) => {
