@@ -60,13 +60,13 @@ export default function IconSlider() {
             repeatType: "loop"
           }}
         >
-          {[...defaultItems, ...defaultItems, ...defaultItems].map((icon, i) =>
+          {[...defaultItems, ...defaultItems,].map((icon, i) =>
             <div
               key={i}
               className="flex-shrink-0 flex items-center gap-2 rounded-lg px-4 lg:px-9 py-2 bg-white/10 backdrop-blur-sm lg:backdrop-blur-3xl"
             >
               {/* {icon.icon} */}
-              <Image src={icon.icon} alt="icon" width={24} height={24} />
+              <img src={icon.icon} alt="icon" width={24} height={24} />
               <span className="whitespace-nowrap">
                 {icon.name}
               </span>
