@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '../ui/button'
-import { Mail, Menu } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { ModeToggle } from '../ui/dark-togggler'
 
 
