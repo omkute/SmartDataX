@@ -146,3 +146,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 10px 15px -3px rgb(74 222 128 / 0.2);
+  }
+  50% {
+    box-shadow: 0 20px 25px -5px rgb(74 222 128 / 0.3);
+  }
+  100% {
+    box-shadow: 0 10px 15px -3px rgb(74 222 128 / 0.2);
+  }
+}
+
+.animate-shadow-pulse {
+  animation: shadowPulse 3s ease-in-out infinite;
+}

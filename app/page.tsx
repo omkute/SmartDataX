@@ -5,18 +5,17 @@ import HeroSection from "@/components/costom/HeroSection";
 import IconSlider from "@/components/costom/iconSlide";
 import OurServices from "@/components/costom/Services";
 import Videosetion from "@/components/costom/videosetion";
-import AboutUsSection from "@/components/newui/AboutUsSection";
 
 export default function Home() {
   return (
     <section className=" w-full">
       <HeroSection/>
       <IconSlider/>
-      <AboutUsSection/>
+      {/* <AboutUsSection/> */}
       <Features/>
       <OurServices/>
       <Videosetion 
-        src="/bannervideo.mp4"
+        src="/banner.mp4"
       />
       <ContactUs/>
     </section>

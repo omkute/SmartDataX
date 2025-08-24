@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type ToolItem = {
   name: string;
@@ -66,7 +67,7 @@ export default function IconSlider() {
               className="flex-shrink-0 flex items-center gap-2 rounded-lg px-4 lg:px-9 py-2 bg-white/10 backdrop-blur-sm lg:backdrop-blur-3xl"
             >
               {/* {icon.icon} */}
-              <img src={icon.icon} alt="icon" width={24} height={24} />
+              <Image src={icon.icon} alt="icon" width={24} height={24} />
               <span className="whitespace-nowrap">
                 {icon.name}
               </span>

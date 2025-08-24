@@ -1,6 +1,5 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const fadeIn: Variants = {
@@ -15,23 +14,23 @@ const fadeIn: Variants = {
 function AboutUs() {
   return (
     <section className="relative z-10 py-24 h-screen bg-white dark:bg-[#0f0f0f]">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6  gap-12 items-center">
         
         {/* === Left: Image or Illustration === */}
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
           variants={fadeIn}
-        >
-          <Image
+        > */}
+          {/* <Image
             src="/illustrations/data-team.svg"
             alt="Our Team"
             width={600}
             height={400}
             className="w-full h-auto"
-          />
-        </motion.div>
+          /> */}
+        {/* </motion.div> */}
 
         {/* === Right: Text Content === */}
         <motion.div
