@@ -36,11 +36,11 @@ function NavBar({ active }: NavBarProps) {
                 </div>
                 <div className=' items-center hidden lg:flex'>
                     <ul className=' flex gap-4'>
-                        <Link href='#' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Home</Link>
+                        <Link href='/' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Home</Link>
                         <Link href='/about' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >About</Link>
                         <Link href='/cases' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Cases</Link>
-                        <Link href='/testimonials' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Testimonial</Link>
-                        <Link href='/pricing' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Pricing</Link>
+                        {/* <Link href='/testimonials' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Testimonial</Link> */}
+                        {/* <Link href='/pricing' className={`font-semibold text-black/50 hover:text-black transition-discrete dark:text-white/80 dark:hover:text-white font-sans ${active ? " font-bold" : ""}`} >Pricing</Link> */}
                     </ul>
                 </div>
                 <div className=' md:flex md:items-center flex items-center space-x-5'>
@@ -54,7 +54,7 @@ function NavBar({ active }: NavBarProps) {
                         <Mail className=' hidden lg:block' />
                         Get a Quote
                     </Button>
-                    <Menu className=' lg:hidden mx-3' />
+                    {/* <Menu className=' lg:hidden mx-3' /> */}
                 </div>
                 {/* Mobile Menu */}
 
