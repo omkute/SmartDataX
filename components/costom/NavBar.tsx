@@ -19,16 +19,14 @@ function NavBar({ active }: NavBarProps) {
                 <div>
                     <Link href='/' >
                         <Image
-                            src="/logo.png"
-                            height={150}
-                            width={150}
+                            src="/logo.jpeg"
+                            height={200}
+                            width={200}
                             alt='Logo'
-                            className=' block dark:hidden'
+                            className=' p-4 dark:hidden'
                         />
                         <Image
                             src="/logo-dark.png" 
-                            // height={180}
-                            // width={180}
                             height={200}
                             width={200}
                             alt='Logo'

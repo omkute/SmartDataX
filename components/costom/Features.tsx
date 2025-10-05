@@ -24,13 +24,13 @@ const features = [
     title: "Visual Dashboards",
     icon: BarChart3,
     description:
-      "Build interactive dashboards with powerful visualizations in minutes.",
+      "Build interactive dashboards with powerful visualizations .",
   },
   {
-    title: "Secure & Scalable",
+    title: "Scalable",
     icon: ShieldCheck,
     description:
-      "Robust performance with end-to-end encryption and scalable architecture.",
+      "Robust performance and scalable architecture.",
   },
 ];
 

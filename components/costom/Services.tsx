@@ -1,28 +1,28 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import { DatabaseZap, BarChart4, Brain, Building2 } from "lucide-react";
 import { Button } from "../ui/button";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const services = [
   {
     title: "Data Engineering",
-    icon: DatabaseZap,
+    icon: '/lottie/cloud.lottie',
     description:
       "Build scalable data pipelines, automate ingestion, and transform raw data into structured formats ready for analytics.",
   },
   {
     title: "Data Analytics",
-    icon: BarChart4,
+    icon: '/lottie/analytics.lottie',
     description:
       "Deliver real-time dashboards and insights using modern visualization tools and intelligent data models.",
   },{
     title: "Business Inslights",
-    icon: Building2,
+    icon: '/lottie/inslights.lottie',
     description:
       "Get informative and Insightful Inslights .",
   },{
     title: "Smarter Business with AI",
-    icon: Brain,
+    icon: '/lottie/ai.lottie',
     description:
       "AI adoption by delivering enterprise-grade AI solutions.",
   }
@@ -61,7 +61,7 @@ function OurServices() {
         {/* Cards */}
         <div className="grid gap-10 sm:grid-cols-2">
           {services.map((service, index) => {
-            const Icon = service.icon;
+            
             return (
               <motion.div
                 key={service.title}
@@ -72,8 +72,16 @@ function OurServices() {
                 variants={fadeIn}
                 className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-300 bg-white dark:bg-[#1a1a1a] flex flex-col items-center text-center"
               >
-                <div className="mb-4 p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-primary">
-                  <Icon size={28} className="text-teal-600 dark:text-teal-300" />
+                <div className="mb-4 p-3  text-primary">
+                  {/* <Icon size={28} className="text-teal-600 dark:text-teal-300" /> */}
+                   <div className="p-2 rounded-full  dark:text-white">
+                    <DotLottieReact
+                      src={service.icon}
+                      loop
+                      autoplay
+                      className="object-contain w-full h-full"
+                    />
+                    </div>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   {service.title}
