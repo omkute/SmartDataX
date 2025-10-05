@@ -17,13 +17,13 @@ function CasesPage() {
         </div>
 
         {/* Dashboard Card */}
-        <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden">
+        <div className=" rounded-3xl shadow-xl overflow-hidden">
           <div className="flex flex-col lg:flex-row">
             {/* Left Section - Dashboard Preview */}
             <div className="lg:w-1/2 p-6 lg:p-12">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src='/dashboard.webp'
+                  src='/dash1.jpeg'
                   width={800}
                   height={600}
                   alt='Analytics Dashboard'
@@ -66,8 +66,58 @@ function CasesPage() {
             </div>
           </div>
         </div>
+
+        {/* Dash 2 */}
+
+        {/* iv className="bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden"> */}
+          <div className="flex  flex-col shadow-lg rounded-2xl lg:flex-row lg:flex-row-reverse">
+            {/* Left Section - Dashboard Preview */}
+            <div className="lg:w-1/2 p-6 lg:p-12">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src='/dash2.jpeg'
+                  width={800}
+                  height={600}
+                  alt='Analytics Dashboard'
+                  className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Right Section - Features */}
+            <div className="lg:w-1/2 p-6 lg:p-12">
+              <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">
+Retailer              </h2>
+              
+              <div className="space-y-6">
+                <FeatureItem 
+                  icon={<BarChart3 className="w-6 h-6 text-green-500" />}
+                  title="Insights of College in your State"
+                  description="Get info about the Private and Government colleges "
+                />
+
+                <FeatureItem 
+                  icon={<PieChart className="w-6 h-6 text-blue-500" />}
+                  title="Inslights for Students"
+                  description="Courses and Various Domains offered by colleges"
+                />
+
+                <FeatureItem 
+                  icon={<LineChart className="w-6 h-6 text-purple-500" />}
+                  title="Trend Analysis"
+                  description="Identify patterns and trends with advanced analytics algorithms and predictive modeling."
+                />
+
+                <FeatureItem 
+                  icon={<TrendingUp className="w-6 h-6 text-rose-500" />}
+                  title="Performance Metrics"
+                  description="Track and analyze key performance indicators with detailed metrics and benchmarks."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 

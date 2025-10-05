@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -9,7 +10,6 @@ import { ModeToggle } from '../ui/dark-togggler'
 //  sticky top-0 z-40 w-full bg-background/40 backdrop-blur-lg
 interface NavBarProps {
     active?: boolean;
-
 }
 
 function NavBar({ active }: NavBarProps) {
@@ -26,7 +26,7 @@ function NavBar({ active }: NavBarProps) {
                             className=' p-4 dark:hidden'
                         />
                         <Image
-                            src="/logo-dark.png" 
+                            src="/logo-dark.png"
                             height={200}
                             width={200}
                             alt='Logo'
@@ -50,9 +50,25 @@ function NavBar({ active }: NavBarProps) {
 
                     </div>
                     {/* <Button >Login</Button> */}
-                    <Button className=' hidden  lg:flex bg-green-400/70 hover:bg-green-400'>
+                    <Button className=' hidden  lg:flex bg-green-400/90 hover:bg-green-400'>
                         <Mail className=' hidden lg:block' />
-                        Get a Quote
+                        Info@smartdatax.com
+                        <span
+                            className="ml-2 cursor-pointer text-xs text-gray-700 dark:text-gray-300 hover:underline"
+                            onClick={async (e) => {
+                                e.stopPropagation();
+                                try {
+                                    await navigator.clipboard.writeText('Info@smartdatax.com');
+                                    // Optionally, show a toast or feedback here
+                                } catch (err) {
+                                    console.log(err);
+                                    
+                                    // Optionally, handle error
+                                }
+                            }}
+                        >
+                            Copy
+                        </span>
                     </Button>
                     {/* <Menu className=' lg:hidden mx-3' /> */}
                 </div>

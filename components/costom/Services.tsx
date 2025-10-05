@@ -2,27 +2,34 @@
 import { motion, Variants } from "framer-motion";
 import { Button } from "../ui/button";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Link from "next/link";
 
 const services = [
   {
     title: "Data Engineering",
     icon: '/lottie/cloud.lottie',
+    link:'/dataengg',
     description:
       "Build scalable data pipelines, automate ingestion, and transform raw data into structured formats ready for analytics.",
   },
   {
     title: "Data Analytics",
     icon: '/lottie/analytics.lottie',
+        link:'/dataanaly',
     description:
       "Deliver real-time dashboards and insights using modern visualization tools and intelligent data models.",
   },{
     title: "Business Inslights",
     icon: '/lottie/inslights.lottie',
+            link:'/businessinsights',
+
     description:
       "Get informative and Insightful Inslights .",
   },{
     title: "Smarter Business with AI",
     icon: '/lottie/ai.lottie',
+            link:'/ai',
+
     description:
       "AI adoption by delivering enterprise-grade AI solutions.",
   }
@@ -93,7 +100,11 @@ function OurServices() {
                   variant="outline"
                   className="text-sm border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
+                  <Link href={service.link}>
+
+                  
                   Learn More
+                  </Link>
                 </Button>
               </motion.div>
             );

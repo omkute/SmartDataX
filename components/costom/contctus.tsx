@@ -7,37 +7,31 @@ import { Button } from "@/components/ui/button";
 export default function ContactUs() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+  console.log(message);
+  
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setMessage("");
-
-    const form = e.currentTarget;
-    const formData = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
-    };
-
+  
+    const formData = new FormData(e.currentTarget);
+  
     try {
-      const res = await fetch("/api/contactus", {
+      const res = await fetch("https://getform.io/f/bmdyxvpa", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: formData,
       });
-
-      const data = await res.json();
+  
       if (res.ok) {
         setMessage("✅ Message sent successfully!");
-        form.reset();
+        e.currentTarget.reset();
       } else {
-        setMessage(`❌ Error: ${data.error}`);
+        setMessage("❌ Something went wrong.");
       }
     } catch (err) {
-        console.log(err);
-        
-      setMessage("❌ Something went wrong.",);
+      console.error(err);
+      setMessage("❌ Network error.");
     } finally {
       setLoading(false);
     }
@@ -47,7 +41,11 @@ export default function ContactUs() {
     <section className="py-10 px-5 md:px-20">
       <div className="max-w-2xl mx-auto bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl shadow-md">
         <h3 className="text-2xl font-semibold text-center mb-4">Contact Us</h3>
-        <p className=" text-center my-3">Got tons of raw data? We’ll turn it into gold. Contact us and unleash your business insights.</p>
+        <div className=" mb-3">
+          <h3 className="text-center font-bold text-green-400 text-2xl ">Got tons of raw data?  We’ll turn it into gold.
+          Contact us and unleash your business insights.</h3>
+        {/* <p className=" text-center text-md my-3"> </p> */}
+        </div>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <Input type="text" name="name" placeholder="Your Name" required />
           <Input type="email" name="email" placeholder="Your Email" required />
@@ -62,7 +60,7 @@ export default function ContactUs() {
             {loading ? "Sending..." : "Send Message"}
           </Button>
         </form>
-        {message && <p className="text-center mt-4">{message}</p>}
+        {/* {message && <p className="text-center mt-4">{message}</p>} */}
       </div>
     </section>
   );
