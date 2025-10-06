@@ -76,7 +76,7 @@ function AboutUs() {
             {/* Team Member 1 */}
             <div className="flex flex-col items-center bg-gray-50 dark:bg-[#18181b] rounded-xl p-4 shadow-md">
               <Image
-                src='/rushi.jpeg'
+                src='/aditya.jpeg'
                 alt="Profile Pic"
                 height={250}
                 width={250}
@@ -100,7 +100,7 @@ function AboutUs() {
             {/* Team Member 3 */}
             <div className="flex flex-col items-center bg-gray-50 dark:bg-[#18181b] rounded-xl p-4 shadow-md">
               <Image
-                src='/rushi.jpeg'
+                src='/om.jpg'
                 alt="Profile Pic"
                 height={250}
                 width={250}
@@ -112,7 +112,7 @@ function AboutUs() {
             {/* Team Member 4 */}
             <div className="flex flex-col items-center bg-gray-50 dark:bg-[#18181b] rounded-xl p-4 shadow-md">
               <Image
-                src='/rushi.jpeg'
+                src='/gayatri.jpeg'
                 alt="Profile Pic"
                 height={250}
                 width={250}

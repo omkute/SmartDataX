@@ -48,13 +48,13 @@ function CasesPage() {
                 <FeatureItem 
                   icon={<PieChart className="w-6 h-6 text-blue-500" />}
                   title="Inslights for Students"
-                  description="Courses and Various Domains offered by colleges"
+                  description="Courses and Various Domains offered by colleges with placements & TPO cell for the better acknoledgement"
                 />
 
                 <FeatureItem 
                   icon={<LineChart className="w-6 h-6 text-purple-500" />}
                   title="Trend Analysis"
-                  description="Identify patterns and trends with advanced analytics algorithms and predictive modeling."
+                  description="Identify patterns and trends with advanced EDA and predictive analysis."
                 />
 
                 <FeatureItem 
@@ -92,14 +92,14 @@ Retailer              </h2>
               <div className="space-y-6">
                 <FeatureItem 
                   icon={<BarChart3 className="w-6 h-6 text-green-500" />}
-                  title="Insights of College in your State"
-                  description="Get info about the Private and Government colleges "
+                  title="Insights for Costomer Analysis"
+                  description="Find the appropriate costomer range of Walmart Dataset "
                 />
 
                 <FeatureItem 
                   icon={<PieChart className="w-6 h-6 text-blue-500" />}
-                  title="Inslights for Students"
-                  description="Courses and Various Domains offered by colleges"
+                  title="Insights for Walmart"
+                  description="The analysis of costing, offers, promotions and Branding"
                 />
 
                 <FeatureItem 
