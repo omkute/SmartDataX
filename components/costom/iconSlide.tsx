@@ -22,10 +22,6 @@ const defaultItems: ToolItem[] = [
     icon: "/icons/databricks.png"
   },
   {
-    name: "R-Lang",
-    icon: "/icons/r-programming.png"
-  },
-  {
     name: "PowerBi",
     icon: "/icons/power-bi.png"
   },
@@ -33,10 +29,6 @@ const defaultItems: ToolItem[] = [
     name: "SQL",
     icon: "/icons/sql.png"
   },
-  {
-    name: "Azure-SQL",
-    icon: "/icons/azure-sql.png"
-  }
 ];
 
 export default function IconSlider() {
