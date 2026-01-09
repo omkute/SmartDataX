@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Cloud, Database, Cpu, BarChart3, ArrowRight, ChartBar, ClipboardMinus, LayoutDashboard, Search, Pickaxe, Briefcase } from "lucide-react";
+import {  ArrowRight, LayoutDashboard, Search, Pickaxe, Briefcase } from "lucide-react";
 import Link from 'next/link';
 
   const BusinessInslightssPage = () => {
