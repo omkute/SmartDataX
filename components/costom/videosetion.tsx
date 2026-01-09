@@ -34,13 +34,14 @@ const VideoSection: React.FC<VideoSectionProps> = ({
       }
     );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    const el = containerRef.current;
+    if (el) {
+      observer.observe(el);
     }
 
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (el) {
+        observer.unobserve(el);
       }
     };
   }, []);

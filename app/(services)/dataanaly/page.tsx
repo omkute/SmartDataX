@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Cloud, Database,  ArrowRight, ChartBar, ClipboardMinus } from "lucide-react";
+import {  Database,  ArrowRight, ChartBar, ClipboardMinus } from "lucide-react";
 import Link from 'next/link';
 
   const DataAnalysisPage = () => {
